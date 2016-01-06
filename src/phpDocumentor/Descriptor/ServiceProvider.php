@@ -148,7 +148,7 @@ class ServiceProvider implements ServiceProviderInterface
         // @codingStandardsIgnoreEnd
 
         $argumentAssembler = new ArgumentAssembler();
-        $factory->register($fileMatcher, new FileAssembler());
+        /* $factory->register($fileMatcher, new FileAssembler()); */
         $factory->register($constantMatcher, new ConstantAssembler());
         $factory->register($traitMatcher, new TraitAssembler());
         $factory->register($classMatcher, new ClassAssembler());

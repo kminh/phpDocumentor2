@@ -54,7 +54,8 @@ class ProjectDescriptorBuilder
 
     public function createProjectDescriptor()
     {
-        $this->project = new ProjectDescriptor(self::DEFAULT_PROJECT_NAME);
+        // FIXME need to fix upstream
+        $this->project = ! $this->project ? new ProjectDescriptor(self::DEFAULT_PROJECT_NAME) : $this->project;
     }
 
     public function setProjectDescriptor(ProjectDescriptor $projectDescriptor)
