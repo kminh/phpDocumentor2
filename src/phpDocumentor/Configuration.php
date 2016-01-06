@@ -77,6 +77,8 @@ class Configuration
     /**
      * @var Partial[] A list of custom texts, or references thereto, that may be injected into templates.
      * @Serializer\Type("array<phpDocumentor\Partials\Partial>")
+     * @Serializer\XmlList(entry = "partial")
+     * @Merger\Replace
      */
     protected $partials = array();
 
