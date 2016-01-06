@@ -187,8 +187,8 @@ HELP
                 'defaultpackagename',
                 null,
                 InputOption::VALUE_OPTIONAL,
-                'Name to use for the default package.',
-                'Default'
+                'Name to use for the default package.'
+                /* 'Default' */
             )
             ->addOption(
                 'sourcecode',

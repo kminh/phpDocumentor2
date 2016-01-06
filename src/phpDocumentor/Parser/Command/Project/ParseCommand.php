@@ -122,8 +122,8 @@ class ParseCommand extends Command
                 'defaultpackagename',
                 null,
                 InputOption::VALUE_OPTIONAL,
-                $this->__('PPCPP:OPT-DEFAULTPACKAGENAME'),
-                'Default'
+                $this->__('PPCPP:OPT-DEFAULTPACKAGENAME')
+                /* 'Default' */
             );
 
         parent::configure();

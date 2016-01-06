@@ -20,7 +20,7 @@ class ParserPopulator
         $parser->setIgnoredTags($input->getOption('ignore-tags'));
         $parser->setValidate($input->getOption('validate'));
         $parser->setDefaultPackageName(
-            $configurationHelper->getOption($input, 'defaultpackagename', 'parser/default-package-name')
+            $configurationHelper->getOption($input, 'defaultpackagename', 'parser/defaultPackageName')
         );
         $parser->setPath($files->getProjectRoot());
     }
